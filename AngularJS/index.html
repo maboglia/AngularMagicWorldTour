@@ -4,7 +4,7 @@
 <head>
     <title>World Tour</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Ejercicio curso AngularJS" />
+    <meta name="description" content="Esercizio con AngularJS" />
     <meta name="keywords" content="" />
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,10 +16,10 @@
     <hr>
     <section name="region_selector">
         <div class="form-inline">
-            <label for="region_code">Choose a region</label>
+            <label for="region_code">Scegli un continente</label>
             <select class="form-control" ng-model="region_code" ng-change="loadCountries()">
                 <option value="europe">Europa</option>
-                <option value="americas">América</option>
+                <option value="america">America</option>
                 <option value="asia">Asia</option>
                 <option value="africa">Africa</option>
             </select>
@@ -28,17 +28,17 @@
     <hr>
     <section name="country_list" class="container">
         <div class="row row-fluid">
-            <h2>Country list</h2>
+            <h2>Lista dei Paesi</h2>
             <div class="col-md-6" name="search_by">
-                <label for="input-search">Look for?</label>
+                <label for="input-search">Cosa cerchi?</label>
                 <input type="search" class="form-control" ng-model="input_search" placeholder="Search countries...">
             </div>
             <div class="col-md-6" name="order_by">
-                <label for="order_field">Order by</label>
+                <label for="order_field">Ordina per</label>
                 <br>
                 <div class="btn-group" name="order_field">
-                    <button type="button" class="btn btn-success" ng-click="field='name'">Name</button>
-                    <button type="button" class="btn " ng-click="field='population'">Population</button>
+                    <button type="button" class="btn btn-success" ng-click="field='name'">Nome</button>
+                    <button type="button" class="btn " ng-click="field='population'">Popolazione</button>
                 </div>
             </div>
         </div>
